@@ -9,7 +9,9 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/imagehover.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jInvertScroll.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css"> --> 
 	
 	<!-- FONTS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -17,7 +19,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.scss">
 
 	
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500|Quicksand:400,500|Righteous|Caveat+Brush&display=swap" rel="stylesheet">
@@ -27,10 +29,11 @@
 	</title>
 </head>
 <body>
+	<!-- NAVIGATION  -->
 	<nav id="navigationBar" class="navbar navbar-expand-lg">
-		 <a class="navbar-brand mt-3" href="#">
-		 	<img class="ml-3" src="./assets/images/logo_white.png" style="width: 100px;">
-		 </a>
+		<a class="navbar-brand mt-3" href="#">
+			<img class="ml-3" src="./assets/images/logo_white.png" style="width: 100px;">
+		</a>
 
 		<div class="navbar-nav ml-auto">
 			<div id="myNav" class="overlay">
@@ -46,39 +49,226 @@
 
 		<span class="mr-4 font-weight-bold" style="font-size:25px;cursor:pointer; color: white;" onclick="openNav()">MENU <i class="fas fa-bars"></i></span>
 	</nav>
-	
-	
-		
-	<div id="parallax" class="div">
+
+	<!-- PARALLAX -->
+	<section id="parallax">
+		<!-- SKY -->
+		<img src="./assets/images/web_bkg1.jpg" class="sky rellax" data-rellax-speed="1">
+
+		<!-- CLOUDS -->
+		<img src="./assets/images/web_bkg2.png" class="clouds rellax" data-rellax-speed="-5">
+
+		<!-- BIRDS -->
+		<img src="./assets/images/web_bkg4.png" class="birds rellax" data-rellax-speed="-2">
+
+		<!-- BACKGROUND BUILDINGS -->
+		<img src="./assets/images/web_bkg5.png" class="shadow rellax" data-rellax-speed="0">
+
+		<!-- FOREGROUND BUILDINGS -->
+		<img src="./assets/images/web_bkg6.png" class="buildings rellax" data-rellax-speed="1">
+
+
 		<div class="text">
 			<div class="text-center h3 name rellax">Ian Gimenez</div>
 
-			<div class="keywords text-center rellax" data-rellax-speed="-7">Designer + Developer</div>
-			
+			<div class="keywords text-center rellax" data-rellax-speed="-2">Designer + Developer</div>
 		</div>
-	</div>
+		<!-- <img src="./assets/images/web_bkg7.png" class="lensflare rellax"> -->
+	</section>
 
+	<!-- WORK SECTION -->
+	<section>
+
+		<div class="content-container">
+			<div class="work-section">
+				<h2 class="section-title text-center">Work</h2>
+				
+				<div class="row justify-content-left mt-5">
+					
+					<div class="col-md-6 work-thumbnail">
+						<figure class="imghvr-shutter-out-diag-1 image-hover">
+							<img src="assets/images/work-img1.jpg" style="width: 100%">
+							<figcaption>
+								<div class="h3">Capstone 1</div>
+								<div class="work-details">
+									Static website using html, css and bootstrap
+								</div>	
+							</figcaption>
+							<a href="https://iancarlgimenez.github.io/capstone1" target="_blank"></a>
+						</figure>				
+					</div>
+
+					<div class="col-md-6 work-thumbnail">
+						<figure class="imghvr-shutter-out-diag-1 image-hover">
+							<img src="assets/images/work-img2.jpg" style="width: 100%">	
+							<figcaption>
+								<div class="h3">Capstone 2</div>
+								<div class="work-details">
+									Asset Management System using Laravel and MySQL
+								</div>	
+							</figcaption>
+							<a href="https://csp2-comflix.herokuapp.com/" target="_blank"></a>
+						</figure>
+
+						
+					</div>
+
+					<div class="col-md-6 work-thumbnail">
+						<figure class="imghvr-shutter-out-diag-1 image-hover">
+							<img src="assets/images/work-img3.jpg" style="width: 100%">	
+							<figcaption>
+								<div class="h3">Capstone 3</div>
+								<div class="work-details">
+									Booking/Reservation system using Laravel, NodeJS and MongoDB
+								</div>
+							</figcaption>
+							<a href="https://csp3-vieworld.herokuapp.com/" target="_blank"></a>
+						</figure>
+
+						
+					</div>
+
+					<div class="col-md-6 work-thumbnail">
+						<figure class="imghvr-shutter-out-diag-1 image-hover">
+							<img src="assets/images/work-img4.jpg" style="width: 100%">	
+							<figcaption>
+								<div class="h3">Other Designs</div>
+								<div class="work-details">
+									Previous projects about branding and print designs
+								</div>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="about-section">
+				<h2 class="section-title text-center">About Me</h2>
+
+				<div class="row mt-3">
+					
+					<!-- <img class="scroll my-image" src="assets/images/me.png" style="height:680px"> -->
+					<div class="rellax" data-rellax-speed="3">
+
+						<div class="about-me">
+							<p>
+								Hi. I am <span class="font-weight-bold">Ian Carl Gimenez</span>. I am a freelance full stack web developer and a graphic designer. I am also a self taught artist since young, even before I took up a formal design course. Growing up I learned how to embrace the technology as a medium and tool to express creativity.
+							</p>
+							
+							<p>
+								From simply doing the traditional visual art such as drawing and painting, I learned graphic design and web design along the way until I got the hang of it and became one of my biggest passion.
+							</p>	
+
+							<p>
+								Creative imagination, observation and research are my main instruments that help me to become successful in my previous works and projects. I love to get inspiration from what I see in my surrounding, as well as from other artists and designers.				
+							</p>
+						</div>
+						
+
+						<div class="skill-content mt-4">
+							<h3 class="section_title">Software Skills</h3>
+
+							<span class="skill_title">Adobe Photoshop</span>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+
+							<span class="skill_title">Adobe Illustrator</span>
+							<div class="progress">
+								<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemind="0" aria-valuemax="100"></div>
+							</div>
+
+							<span class="skill_title">Adobe Lightroom</span>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemind="0" aria-valuemax="100"></div>
+							</div>		
+
+							<span class="skill_title">Adobe Premiere Pro</span>
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemind="0" aria-valuemax="100"></div>
+							</div>					
+						</div> 
+
+						<div class="skill-content mt-4">
+							<h3 class="section_title">Design Skills</h3>
+
+							<span class="skill_title">Print Design</span>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+
+							<span class="skill_title">Branding and Identity</span>
+							<div class="progress">
+								<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemind="0" aria-valuemax="100"></div>
+							</div>
+
+							<span class="skill_title">Typography</span>
+							<div class="progress">
+								<div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemind="0" aria-valuemax="100"></div>
+							</div>		
+
+							<span class="skill_title">Web Design</span>
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemind="0" aria-valuemax="100"></div>
+							</div>		
+
+							<span class="skill_title">Illustration</span>
+							<div class="progress">
+								<div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemind="0" aria-valuemax="100"></div>
+							</div>		
+
+							<span class="skill_title">Video Editing</span>
+								<div class="progress">
+									<div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemind="0" aria-valuemax="100"></div>
+								</div>		
+							</div> 
+					</div>
+
+				</div>
+			</div>
+
+			<div class="contact-section">
+				<h2 class="section-title text-center">Contact</h2>
+
+
+				<p class="need-help text-center">Need help on your next project? Message me and let's talk about it.</p>
+				
+				<div class="form contact-me">
+					<input type="text" class="form-control mt-3" name="name" placeholder="your name" required>
+					<input type="email" class="form-control mt-3" name="email" placeholder="email address" required>
+					<input type="text" class="form-control mt-3" name="subject" placeholder="subject" required>
+					<textarea name="message" class="form-control mt-3" rows="4" placeholder="your message" required></textarea>
+					<button type="submit" class="mt-3 btn btn-block btn-submit font-weight-bold">Let's Talk</button>
+				</div>
+
+
+				<div class="social-media text-center mt-4">
+					<a href="#" class="icon-fb"><i class="fab fa-facebook fa-lg"></i></a>
+					<a href="#" class="icon-ig"><i class="fab fa-instagram fa-lg"></i></a>
+					<a href="#" class="icon-yt"><i class="fab fa-youtube fa-lg"></i></a>
+				</div>
+			</div>
+		</section>
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+
+	<!-- <script type="text/javascript" src="assets/js/rellax.min.js"></script> -->
 	
-
-</body>
-	
-	<script type="text/javascript">
-		
-		var rellax = new Rellax('.rellax',{
-
-			callback: function(position){
-
-
-			}
-		});
-		
+	<script>
+		var rellax = new Rellax('.rellax');
 	</script>
+</body>
 
-		<!-- JAVASCRIPT -->
-	<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<!-- <script type="text/javascript" src="assets/js/jquery.jInvertScroll.js"></script> -->
 
-	<script type="text/javascript" src="assets/js/script.js"></script>
-	<script type="text/javascript" src="assets/js/rellax.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+
 </html>

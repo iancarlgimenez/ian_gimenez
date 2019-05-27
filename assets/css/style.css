@@ -1,16 +1,10 @@
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
+  /*background-color: #35425d;*/
   margin: 0;
   padding: 0;
-/*  perspective: 1px;
-  transform-style: preserve-3d;*/
-  height: 120%;
   overflow-y: scroll;
   overflow-x: hidden;
+  /*background-color: #4c5466;*/
 }
 
 .overlay {
@@ -64,11 +58,19 @@ body {
   }
 }
 
+#navigationBar {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+}
+
+
 
 .text {
   font-family: 'Poppins', sans-serif;
-  /*padding-top: 210px;*/
+  padding: 12vw 0 5vw;
   letter-spacing: 1px;
+  z-index: 10;
 }
 
 .name {
@@ -76,34 +78,168 @@ body {
   text-transform: uppercase;
   color: #8b7532;
   letter-spacing: 0.5px;
-  /*line-height: 80vh;*/
   font-size: 60px;
 }
 
 .keywords {
-  color: silver;
+  color: white;
   font-size: 22px;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-#navigationBar {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
+section {
+  height: 100vh;
+  width: 100vw;
+  /*box-sizing: border-box;*/
 }
 
+.parallax {
+  /*background-color: #35425d;*/
+  z-index: 5;
+  top: 0;
+  position: absolute;
 
-#parallax {
-  background: url("../images/background-1.jpg") no-repeat center;
-  background-attachment: fixed;
-  background-size: cover;
-  /*height: 100vh;*/
-  height: 120%;
-  padding: 20vw 0 5vw;
+}
+
+.sky {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.clouds {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
   width: 100vw;
 }
 
 
+.birds {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100vw;
+}
+
+.shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 100vw;
+}
+
+.buildings {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.section-title {
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-size: 40px;
+  font-family: 'Poppins';
+}
+
+.work-thumbnail {
+  padding: 0;
+}
+
+[class^='imghvr-'],
+[class*=' imghvr-'] {
+  font-style: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0, 0.7)!important;
+}
+
+.about-section {
+  background: url('../images/me.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.about-me {
+  margin-left: 100px;
+  margin-top: 100vh;
+  width: 45%;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.skill-content {
+  margin-left: 100px;
+  width: 45%;
+}
+
+.contact-me {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.need-help {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.contact-section {
+ background: url('../images/web-bkg2.jpg');
+ height: 100vh;
+ /*padding-bottom: 30px;*/
+}
+
+.content-container {
+  width: 100vw;
+}
+
+
+.icon-fb i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 10px;
+  color: white;
+  background: #3b5999;
+  border-radius: 40px;
+}
+
+.icon-ig i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 10px;
+  color: white;
+  background: #e4405f;
+  border-radius: 40px;
+}
+
+.icon-yt i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 10px;
+  color: white;
+  background: #cd201f;
+  border-radius: 40px;
+}
+
+.btn-submit {
+  background: #4173d2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 
