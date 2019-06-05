@@ -8,21 +8,16 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="asset<!-- s/css/boots -->trap-grid.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="assets/css/jInvertScroll.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/imagehover.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/jInvertScroll.css">
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css"> --> 
+	<link rel="stylesheet" type="text/css" href="assets/css/imagehover.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
 	<!-- FONTS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.scss">
-
-	
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500|Quicksand:400,500|Righteous|Caveat+Brush&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500|Quicksand:400,500|Righteous|Caveat+Brush|Montserrat&display=swap" rel="stylesheet">
 
 	<title>
 		Ian Gimenez
@@ -39,10 +34,10 @@
 			<div id="myNav" class="overlay">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<div class="overlay-content">
-					<a href="#">About</a>
-					<a href="#">Services</a>
-					<a href="#">Work</a>
-					<a href="#">Contact</a>
+					<a href="#about" onclick="closeNav()">About</a>
+					<a href="#" onclick="closeNav()">Services</a>
+					<a href="#work" onclick="closeNav()">Work</a>
+					<a href="#contact" onclick="closeNav()">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -76,83 +71,70 @@
 		<!-- <img src="./assets/images/web_bkg7.png" class="lensflare rellax"> -->
 	</section>
 
-	<!-- WORK SECTION -->
 	<section>
-
 		<div class="content-container">
-			<div class="work-section">
+			<div id="work" class="work-section">
 				<h2 class="section-title text-center">Work</h2>
-				
-				<div class="row justify-content-left mt-5">
-					
-					<div class="col-md-6 work-thumbnail">
-						<figure class="imghvr-shutter-out-diag-1 image-hover">
-							<img src="assets/images/work-img1.jpg" style="width: 100%">
-							<figcaption>
-								<div class="h3">Capstone 1</div>
-								<div class="work-details">
-									Static website using html, css and bootstrap
-								</div>	
-							</figcaption>
-							<a href="https://iancarlgimenez.github.io/capstone1" target="_blank"></a>
-						</figure>				
-					</div>
 
+				<div class="row justify-content-left no-margin mt-5">
 					<div class="col-md-6 work-thumbnail">
-						<figure class="imghvr-shutter-out-diag-1 image-hover">
-							<img src="assets/images/work-img2.jpg" style="width: 100%">	
+						<figure class="imghvr-reveal-down">
+							<img class="img-responsive work-img" src="assets/images/work-img1.jpg">
 							<figcaption>
-								<div class="h3">Capstone 2</div>
-								<div class="work-details">
-									Asset Management System using Laravel and MySQL
-								</div>	
-							</figcaption>
-							<a href="https://csp2-comflix.herokuapp.com/" target="_blank"></a>
-						</figure>
-
-						
-					</div>
-
-					<div class="col-md-6 work-thumbnail">
-						<figure class="imghvr-shutter-out-diag-1 image-hover">
-							<img src="assets/images/work-img3.jpg" style="width: 100%">	
-							<figcaption>
-								<div class="h3">Capstone 3</div>
-								<div class="work-details">
-									Booking/Reservation system using Laravel, NodeJS and MongoDB
+								<div class="text-center work-title2">
+									DesignMage
 								</div>
 							</figcaption>
-							<a href="https://csp3-vieworld.herokuapp.com/" target="_blank"></a>
+							<a href="https://iancarlgimenez.github.io"></a>
 						</figure>
-
-						
 					</div>
 
 					<div class="col-md-6 work-thumbnail">
-						<figure class="imghvr-shutter-out-diag-1 image-hover">
-							<img src="assets/images/work-img4.jpg" style="width: 100%">	
+						<figure class="imghvr-reveal-down">
+							<img class="img-responsive work-img" src="assets/images/work-img2.jpg">
 							<figcaption>
-								<div class="h3">Other Designs</div>
-								<div class="work-details">
-									Previous projects about branding and print designs
+								<div class="text-center work-title">
+									ComFlix
 								</div>
 							</figcaption>
-							<a href="#"></a>
+							<a href="https://csp2-comflix.herokuapp.com"></a>
 						</figure>
+					</div>
+				</div>
 
-						
+				<div class="row justify-content-left no-margin">
+					<div class="col-md-6 work-thumbnail">
+						<figure class="imghvr-reveal-down">
+							<img class="img-responsive work-img" src="assets/images/work-img3.jpg">
+							<figcaption>
+								<div class="text-center work-title">
+									VieWorld
+								</div>
+							</figcaption>
+							<a href="https://csp3-vieworld.herokuapp.com"></a>
+						</figure>
+					</div>
+
+					<div class="col-md-6 work-thumbnail">
+						<figure class="imghvr-reveal-down">
+							<img class="img-responsive work-img" src="assets/images/work-img4.jpg">
+							<figcaption>
+								<div class="text-center work-title">
+									Other Projects
+								</div>
+							</figcaption>
+							<a href="gallery.html"></a>
+						</figure>
 					</div>
 				</div>
 			</div>
 
-			<div class="about-section">
+			<div id="about" class="about-section">
 				<h2 class="section-title text-center">About Me</h2>
 
-				<div class="row mt-3">
+				<div class="row">
 					
-					<!-- <img class="scroll my-image" src="assets/images/me.png" style="height:680px"> -->
 					<div class="rellax" data-rellax-speed="3">
-
 						<div class="about-me">
 							<p>
 								Hi. I am <span class="font-weight-bold">Ian Carl Gimenez</span>. I am a freelance full stack web developer and a graphic designer. I am also a self taught artist since young, even before I took up a formal design course. Growing up I learned how to embrace the technology as a medium and tool to express creativity.
@@ -167,70 +149,112 @@
 							</p>
 						</div>
 						
+						<!-- HARD SKILLS -->
+						<div class="container mt-5">
+							<h3 class="skill_title font-weight-bold">Hard Skills</h3>
+							<div class="row">
+								
+								<!-- HTML -->
+								<div class="GaugeMeter" data-percent="75" data-size="110" data-color="#407ed8" data-width="7" data-stripe="5" data-text="HTML" data-text_size="0.10">
+								</div>
+								
+								<!-- CSS -->
+								<div class="GaugeMeter" data-percent="60" data-size="110" data-color="#9f95db" data-width="7" data-stripe="5" data-text="CSS" data-text_size="0.10">
+								</div>
 
-						<div class="skill-content mt-4">
-							<h3 class="section_title">Software Skills</h3>
+								<!-- JAVASCRIPT -->
+								<div class="GaugeMeter" data-percent="55" data-size="110" data-color="#c6a2df" data-width="7" data-stripe="5" data-text="Javascript" data-text_size="0.10">
+								</div>
 
-							<span class="skill_title">Adobe Photoshop</span>
-							<div class="progress">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+								<!-- JQUERY -->
+								<div class="GaugeMeter" data-percent="60" data-size="110" data-color="#eac1e3" data-width="7" data-stripe="5" data-text="JQuery" data-text_size="0.10">
+								</div>
 							</div>
 
-							<span class="skill_title">Adobe Illustrator</span>
-							<div class="progress">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemind="0" aria-valuemax="100"></div>
+							<div class="row">
+
+								<!-- PHP -->
+								<div class="GaugeMeter" data-percent="65" data-size="110" data-color="#407ed8" data-width="7" data-stripe="5" data-text="PHP" data-text_size="0.10">
+								</div>	
+
+								<!-- Laravel -->
+								<div class="GaugeMeter" data-percent="65" data-size="110" data-color="#9f95db" data-width="7" data-stripe="5" data-text="Laravel" data-text_size="0.10">
+								</div>	
+									
+								<!-- NodeJS -->
+								<div class="GaugeMeter" data-percent="65" data-size="110" data-color="#c6a2df" data-width="7" data-stripe="5" data-text="NodeJS" data-text_size="0.10">
+								</div>	
+
+								<!-- MySQL -->
+								<div class="GaugeMeter" data-percent="65" data-size="110" data-color="#eac1e3" data-width="7" data-stripe="5" data-text="MySQL" data-text_size="0.10">
+								</div>	
+				
 							</div>
 
-							<span class="skill_title">Adobe Lightroom</span>
-							<div class="progress">
-								<div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemind="0" aria-valuemax="100"></div>
-							</div>		
+							<div class="row">
 
-							<span class="skill_title">Adobe Premiere Pro</span>
-							<div class="progress">
-								<div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemind="0" aria-valuemax="100"></div>
-							</div>					
-						</div> 
+								<!-- MongoDB -->
+								<div class="GaugeMeter" data-percent="65" data-size="110" data-color="#407ed8" data-width="7" data-stripe="5" data-text="MongoDB" data-text_size="0.10">
+								</div>	
 
-						<div class="skill-content mt-4">
-							<h3 class="section_title">Design Skills</h3>
+								<!-- MSSQL -->
+								<div class="GaugeMeter" data-percent="50" data-size="110" data-color="#9f95db" data-width="7" data-stripe="5" data-text="MSSQL" data-text_size="0.10">
+								</div>	
 
-							<span class="skill_title">Print Design</span>
-							<div class="progress">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+								<!-- JAVA -->
+								<div class="GaugeMeter" data-percent="40" data-size="110" data-color="#c6a2df" data-width="7" data-stripe="5" data-text="Java" data-text_size="0.10">
+								</div>	
 							</div>
+						</div>
 
-							<span class="skill_title">Branding and Identity</span>
-							<div class="progress">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemind="0" aria-valuemax="100"></div>
+						<!-- SOFTWARE SKILLS -->
+						<div class="container mt-4">
+							<h3 class="skill_title font-weight-bold">SOFTWARE</h3>
+							<div class="row">
+								<!-- PHOTOSHOP-->
+								<div class="GaugeMeter" data-percent="80" data-size="125" data-color="#407ed8" data-width="7" data-text="Photoshop" data-text_size="0.09">
+								</div>
+
+								<!-- ILLUSTRATOR -->
+								<div class="GaugeMeter" data-percent="65" data-size="125" data-color="#9f95db" data-width="7" data-text="Illustrator" data-text_size="0.09">
+								</div>
+
+								<!-- PREMIERE PRO CC -->
+								<div class="GaugeMeter" data-percent="70" data-size="125" data-color="#c6a2df" data-width="7" data-text="Premiere Pro" data-text_size="0.09">
+								</div>
+
+								<!-- LIGHTROOM -->
+								<div class="GaugeMeter" data-percent="60" data-size="125" data-color="#eac1e3" data-width="7" data-text="Lightroom" data-text_size="0.09">
+								</div>	
 							</div>
+						</div>
 
-							<span class="skill_title">Typography</span>
-							<div class="progress">
-								<div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemind="0" aria-valuemax="100"></div>
-							</div>		
+						<div class="container mt-4">
+							<h3 class="skill_title font-weight-bold">SKILLS</h3>
+							<div class="row">
 
-							<span class="skill_title">Web Design</span>
-							<div class="progress">
-								<div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemind="0" aria-valuemax="100"></div>
-							</div>		
+								<!-- FRONT END-->
+								<div class="GaugeMeter" data-percent="70" data-size="138" data-color="#407ed8" data-width="10" data-style="Semi" data-text="Front End" data-text_size="0.07" data-stripe="3">
+								</div>
 
-							<span class="skill_title">Illustration</span>
-							<div class="progress">
-								<div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemind="0" aria-valuemax="100"></div>
-							</div>		
+								<!-- BACK END -->
+								<div class="GaugeMeter" data-percent="65" data-size="138" data-color="#9f95db" data-width="10" data-style="Semi" data-text="Back End" data-text_size="0.07" data-stripe="3">
+								</div>
 
-							<span class="skill_title">Video Editing</span>
-								<div class="progress">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemind="0" aria-valuemax="100"></div>
-								</div>		
-							</div> 
+								<!-- GRAPHIC DESIGN -->
+								<div class="GaugeMeter" data-percent="80" data-size="140" data-color="#c6a2df" data-width="10" data-style="Semi" data-text="Graphic Design" data-text_size="0.07" data-stripe="3">
+								</div>
+
+								<!-- VIDEO EDITING -->
+								<div class="GaugeMeter" data-percent="65" data-size="140" data-color="#eac1e3" data-width="10" data-style="Semi" data-text="Video Editing" data-text_size="0.07" data-stripe="3">
+								</div>	
+							</div>
+						</div>
 					</div>
-
 				</div>
 			</div>
 
-			<div class="contact-section">
+			<div id="contact" class="contact-section">
 				<h2 class="section-title text-center">Contact</h2>
 
 
@@ -251,7 +275,8 @@
 					<a href="#" class="icon-yt"><i class="fab fa-youtube fa-lg"></i></a>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
@@ -265,6 +290,7 @@
 
 <!-- JAVASCRIPT -->
 <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/js/GaugeMeter.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/popper.min.js"></script>
 <!-- <script type="text/javascript" src="assets/js/jquery.jInvertScroll.js"></script> -->

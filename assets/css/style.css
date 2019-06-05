@@ -4,8 +4,15 @@ body {
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  /*background-color: #4c5466;*/
+  /*background-color: #384661;*/
 }
+
+.navbar {
+  /*position: fixed;*/
+  top: 0;
+  width: 100%;
+}
+
 
 .overlay {
   height: 100%;
@@ -148,17 +155,13 @@ section {
   text-transform: uppercase;
   padding-top: 30px;
   font-size: 40px;
-  font-family: 'Poppins';
+  font-family: 'Montserrat';
+  font-weight: 800;
 }
 
 .work-thumbnail {
   padding: 0;
-}
-
-[class^='imghvr-'],
-[class*=' imghvr-'] {
-  font-style: 'Poppins', sans-serif;
-  background-color: rgba(0, 0, 0, 0.7)!important;
+  margin: 0;
 }
 
 .about-section {
@@ -172,9 +175,11 @@ section {
   margin-left: 100px;
   margin-top: 100vh;
   width: 45%;
-  font-family: 'Poppins', sans-serif;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
+  font-family: 'Quicksand', sans-serif;
+  padding: 30px;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  background-color: #457ed2;
+  color: whitesmoke;
 }
 
 .skill-content {
@@ -242,4 +247,125 @@ section {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+/*
+.work-details {
+  font-family: 'Poppins', sans-serif; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}*/
 
+.work-thumbnail {
+  padding: 0;
+  margin: 0;
+}
+
+.work-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.work-title2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  /*text-transform: uppercase;*/
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.work-img {
+  object-fit: contain;
+  /*width: 100%;*/
+}
+
+/*
+[class*=" imghvr-"], [class^=imghvr-] {
+  background: rgba(0, 0, 0, 0.2);
+}*/
+
+[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption {
+  /*background: rgb(67,124,210);
+  background: linear-gradient(177deg, rgba(67,124,210,1) 0%, rgba(208,169,225,1) 64%, rgba(250,227,231,1) 100%);*/
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*[class*=" imghvr-reveal-"], [class^=imghvr-reveal-] {
+  background-color: rgba(0, 0, 0, 0.7);
+}*/
+
+[class*=" imghvr-reveal-"]:before, [class^=imghvr-reveal-]:before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.skill_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  /*font-weight: 900;*/
+}
+/*GAUGE METER*/
+.GaugeMeter {
+  position: Relative;
+  text-align: Center;
+  overflow: Hidden;
+  cursor: Default;
+  display: inline-block;
+}
+
+.GaugeMeter SPAN, .GaugeMeter B {
+  width: 54%;
+  position: Absolute;
+  text-align: Center;
+  display: Inline-Block;
+  color: RGBa(0,0,0,.8);
+  font-weight: 100;
+  font-family: "Open Sans", Arial;
+  overflow: Hidden;
+  white-space: NoWrap;
+  text-overflow: Ellipsis;
+  margin: 0 23%;
+}
+
+.GaugeMeter[data-style="Semi"] B {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.GaugeMeter S, .GaugeMeter U {
+  text-decoration: None;
+  font-size: .60em;
+  font-weight: 200;
+  opacity: .6;
+}
+
+.GaugeMeter B {
+  color: #000;
+  font-weight: 200;
+  opacity: .8;
+}
+
+.gallery-container {
+   background: url('../images/web-bkg3.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   height: 100vh;
+   /*width: 100%;*/
+}
