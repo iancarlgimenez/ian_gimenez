@@ -7,9 +7,8 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="asset<!-- s/css/boots -->trap-grid.css">
-	<!-- 	<link rel="stylesheet" type="text/css" href="assets/css/jInvertScroll.css"> -->
-	<link rel="stylesheet" type="text/css" href="assets/css/imagehover.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/lightbox.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/imagehover.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
@@ -20,9 +19,9 @@
 
 	<title>Ian Gimenez</title>
 </head>
-<body>
+<body class="gallery-body">
 	<nav id="navigationBar" class="navbar navbar-expand-lg">
-		<a class="navbar-brand mt-3" href="#">
+		<a class="navbar-brand mt-3" href="index.html">
 			<img class="ml-3" src="./assets/images/logo_white.png" style="width: 100px;">
 		</a>
 
@@ -30,19 +29,81 @@
 			<div id="myNav" class="overlay">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<div class="overlay-content">
-					<a href="#about" onclick="closeNav()">About</a>
-					<a href="#" onclick="closeNav()">Services</a>
-					<a href="#work" onclick="closeNav()">Work</a>
-					<a href="#contact" onclick="closeNav()">Contact</a>
+					<a href="index.html#about" onclick="closeNav()">About</a>
+					<!-- <a href="#" onclick="closeNav()">Services</a> -->
+					<a href="index.html#work" onclick="closeNav()">Work</a>
+					<a href="index.html#contact" onclick="closeNav()">Contact</a>
 				</div>
 			</div>
 		</div>
 
 		<span class="mr-4 font-weight-bold" style="font-size:25px;cursor:pointer; color: white;" onclick="openNav()">MENU <i class="fas fa-bars"></i></span>
 	</nav>
-	<div class="gallery-container">
-		<div class="container">
-			
+	<div>
+		<div class="container gallery-container">
+			<h2 class="section-title text-center mb-5">Gallery</h2>
+
+			<div class="row">
+				<div class="column">
+					<a href="assets/images/gallery_img1.jpg" data-lightbox="gallery" data-title="Yuletide Season">
+						<img src="assets/images/gallery_img1.jpg">
+					</a>
+
+					<a href="assets/images/gallery_img2.jpg" data-lightbox="gallery" data-title="Dan Anghang">
+						<img src="assets/images/gallery_img2.jpg">
+					</a>
+
+					<a href="assets/images/gallery_img3.png" data-lightbox="gallery" data-title="DesignMage">
+						<img src="assets/images/gallery_img3.png">
+					</a>
+					
+				</div>
+
+				<div class="column">
+					<a href="assets/images/gallery_img4.jpg" data-lightbox="gallery" data-title="DJ Morales">
+						<img src="assets/images/gallery_img4.jpg">
+					</a>
+					
+					<a href="assets/images/gallery_img5.jpg" data-lightbox="gallery" data-title="Self Portrait">
+						<img src="assets/images/gallery_img5.jpg">
+					</a>
+					
+					<a href="assets/images/gallery_img6.jpg" data-lightbox="gallery" data-title="Turning 18">
+						<img src="assets/images/gallery_img6.jpg">
+					</a>
+
+				</div>
+
+				<div class="column">
+					<a href="assets/images/gallery_img7.jpg" data-lightbox="gallery" data-title="Gio Martin">
+						<img src="assets/images/gallery_img7.jpg">
+					</a>
+					
+					<a href="assets/images/gallery_img8.jpg" data-lightbox="gallery" data-title="Neenah">
+						<img src="assets/images/gallery_img8.jpg">
+					</a>
+					
+					<a href="assets/images/gallery_img9.jpg" data-lightbox="gallery" data-title="MJEV">
+						<img src="assets/images/gallery_img9.jpg">
+					</a>
+
+				</div>
+
+				<div class="column">
+					<a href="assets/images/gallery_img10.jpg" data-lightbox="gallery" data-title="Rhemuel Lunio">
+						<img src="assets/images/gallery_img10.jpg">
+					</a>
+					
+					<a href="assets/images/gallery_img11.jpg" data-lightbox="gallery" data-title="Rise and Shine">
+						<img src="assets/images/gallery_img11.jpg">
+					</a>
+					
+					<a href="assets/images/gallery_img12.jpg" data-lightbox="gallery" data-title="Laid back">
+						<img src="assets/images/gallery_img12.jpg">
+					</a>
+
+				</div>	
+			</div>
 		</div>
 	</div>
 </body>
@@ -52,6 +113,6 @@
 <script type="text/javascript" src="assets/js/GaugeMeter.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/popper.min.js"></script>
-
+<script type="text/javascript" src="assets/js/lightbox.min.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
 </html>
